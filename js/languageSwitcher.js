@@ -48,10 +48,8 @@ async function fetchJsonContent(pageName) {
                     file = jsonFile;
                     break;
             }
-            // let file = jsonFile === '' ? 'index' : jsonFile;
-            const filePath = `${baseDirectory}/json/${file}.json`;
-            console.log(baseDirectory);
-            console.log(`Filepath is the following: ${filePath}`);
+            //const filePath = `${baseDirectory}/json/${file}.json`;
+            const filePath = `${baseDirectory}/cesarmilesi.github.io/json/${file}.json`;
             const response = await fetch(filePath);
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
