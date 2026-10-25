@@ -49,8 +49,8 @@ async function fetchJsonContent(pageName) {
                     break;
             }
             //const filePath = `${baseDirectory}/json/${file}.json`;
-            const filePath = `${baseDirectory}/cesarmilesi.github.io/json/${file}.json`;
-            const response = await fetch(filePath);
+            const filePath = `${baseDirectory}/json/${file}.json`;
+            const response = await fetch("https://cesarmilesi.github.io/ProfessionalWebsite/" + filePath);
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
             }         
